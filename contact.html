@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center px-3" style="font-family: HUUGFont-klein;">
+            <ul class="nav nav-tabs mb-2 mt-3 d-flex justify-content-evenly col-12 col-md-8 border-0 align-self-center"
+                id="contact-tab" role="tablist">
+                <button class="nav-link active mx-2" id="offerte-tab" data-bs-toggle="tab" data-bs-target="#offerte" type="button"
+                    role="tab" aria-controls="offerte" aria-selected="true">Offerte aanvraag</button>
+                <button class="nav-link mx-2" id="MenuAanvraag-tab" data-bs-toggle="tab" data-bs-target="#MenuAanvraag" type="button"
+                    role="tab" aria-controls="MenuAanvraag" aria-selected="false">Menu
+                    aanvraag</button>
+                <button class="nav-link mx-2" id="vraag-tab" data-bs-toggle="tab" data-bs-target="#vraag" type="button" role="tab"
+                    aria-controls="vraag" aria-selected="false">Vraag</button>
+            </ul>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="tab-content col-12 col-md-8 bg-transparent border-0">
+                <div class="tab-pane fade show active" id="offerte" role="tabpanel" aria-labelledby="offerte-tab">
+                    <form method="post" action="https://formspree.io/f/xrgwvpnq">
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingName" name="naam" placeholder="name">
+                            <label for="floatingName">Je volledige naam</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="tel" class="form-control" id="floatingPhone" name="telefoon" placeholder="123-456-7890">
+                            <label for="floatingPhone">Telefoonnummer</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="number" class="form-control" id="floatingNumber" name="aantal" placeholder="1">
+                            <label for="floatingNumber">Aantal personen</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingLocation" name="locatie"
+                                placeholder="street 107 city">
+                            <label for="floatingLocation">Locatie</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="date" class="form-control" id="floatingDateTime" name="datum"
+                                placeholder="09-09-2023">
+                            <label for="floatingDateTime">Datum</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="email" class="form-control" id="floatingEmail" name="email"
+                                placeholder="name@example.com">
+                            <label for="floatingEmail">E-mail</label>
+                        </div>
+                        <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur"
+                            style="font-family: HUUGFont-klein;">VERSTUUR</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="MenuAanvraag" role="tabpanel" aria-labelledby="MenuAanvraag-tab">
+                    <form method="post" action="https://formspree.io/f/xrgwvpnq">
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingName" name="naam" placeholder="name">
+                            <label for="floatingName">Je volledige naam</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="number" class="form-control" id="floatingNumber" name="aantal" placeholder="1">
+                            <label for="floatingNumber">Aantal personen</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingLocation" name="locatie"
+                                placeholder="street 107 city">
+                            <label for="floatingLocation">Locatie</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="email" class="form-control" id="floatingEmail" name="email"
+                                placeholder="name@example.com">
+                            <label for="floatingEmail">E-mail</label>
+                        </div>
+                        <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur"
+                            style="font-family: HUUGFont-klein;">VERSTUUR</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="vraag" role="tabpanel" aria-labelledby="vraag-tab">
+                    <form method="post" action="https://formspree.io/f/xrgwvpnq">
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingName" name="naam" placeholder="name">
+                            <label for="floatingName">Je volledige naam</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                name="vraag" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Stel je vraag</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="email" class="form-control" id="floatingEmail" name="email"
+                                placeholder="name@example.com">
+                            <label for="floatingEmail">E-mail</label>
+                        </div>
+                        <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur"
+                            style="font-family: HUUGFont-klein;">VERSTUUR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

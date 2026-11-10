@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'HUUGFont';
+    src: url(font-groot/abang-webfont.woff);
+}
+
+@font-face {
+    font-family: 'HUUGFont-klein';
+    src: url(font-klein/LexendDeca-Regular.woff);
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: none;
+    overflow-x: hidden;
+    background-image: url("wetransfer/HUUG website bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+nav {
+    z-index: 3;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    font-family: HUUGFont-klein;
+}
+
+h3 {
+    color: white;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-size: clamp(1.1em, 1.8vw, 2.5em);
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    font-family: HUUGFont-klein;
+    font-size: clamp(0.9em, 1.1vw, 1.1em);
+}
+
+#contentMask {
+    background-color: rgba(65, 75, 59, 0.9);
+    z-index: 2;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    height: 169px;
+    width: 100%;
+}
+
+#underbody {
+    margin-top: 169px;
+    z-index: 1;
+    width: 100%;
+}
+
+
+#logo {
+    height: 120px;
+    width: 100%;
+    background-color: rgba(65, 75, 59, 0);
+    z-index: 1;
+}
+
+#navbar {
+    margin-top: 105px;
+    background-color: transparent;
+}
+
+.scrolled-down {
+    transform: translateY(-75%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+}
+
+#button {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 3;
+    border: none;
+    color: white;
+}
+
+#nav-tab button {
+    color: white;
+    border: none;
+    background-color: transparent;
+    margin-left: clamp(4px, 1.5vw, 50px);
+    margin-right: clamp(4px, 1.5vw, 50px);
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#nav-tab button:hover,
+#nav-tab button.active {
+    border-bottom: 2px solid;
+}
+
+#card-review {
+    background-color: rgba(65, 75, 59, 0.9);
+    border-radius: 10px;
+    border-width: 1px;
+    height: fit-content;
+}
+
+#card,
+#card-small,
+#card-mob {
+    border-radius: 0px;
+    border: none;
+    overflow-y: auto;
+}
+
+#card img {
+    height: 56vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#card-mob img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#card-small img {
+    height: 50vh;
+    width: 49%;
+    object-fit: cover;
+}
+
+#menu-tab,
+#contact-tab {
+    background-color: rgba(65, 75, 59, 0.9);
+    border-radius: 2px;
+    flex-wrap: nowrap;
+}
+
+#menu-tab button,
+#contact-tab button {
+    background-color: transparent;
+    color: white;
+    width: clamp(100px, 16vw, 300px);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 0px;
+    border-width: 2px;
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+}
+
+@media (max-width: 768px) {
+    #menu-tab {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu-tab button {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+#card-menu> :first-child {
+    border-radius: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    height: clamp(120px, 10vw, 200px);
+    overflow: hidden;
+    background-color: rgba(65, 75, 59, 0.9);
+}
+
+#voorpagina-menu {
+    width: 100%;
+    height: fit-content;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+#card-menu> :last-child {
+    height: fit-content;
+    border-radius: 0px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#card-menu :nth-child(1) img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0;
+}
+
+.content.show {
+    max-height: 1000px; /* Large value to ensure full expansion */
+    padding: 15px; /* Add padding to avoid a collapsed appearance */
+}
+
+#btn-verstuur {
+    border-color: #414B3B;
+    background-color: rgba(65, 75, 59, 0.9);
+    color: white;
+    border-width: 2px;
+    font-size: clamp(0.9em, 1.5vw, 2em);
+}
+
+footer {
+    background-color: rgba(65, 75, 59, 0.9);
+}
+
+#review {
+    height: 400px;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(20, 25, 18, 0.55), rgba(20, 25, 18, 0.55)), url("images-small/Home-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 55vh;
+    align-items: center;
+    margin: 0 0 -1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        background-attachment: scroll;
+    }
+}
+
+#hero-inhoud {
+    padding: 40px 20px;
+}
+
+#hero h1 {
+    font-size: clamp(1.4em, 3.2vw, 2.8em);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: clamp(1em, 1.6vw, 1.3em);
+    margin-bottom: 1.8rem;
+}
+
+#btn-hero {
+    border: 2px solid white;
+    background-color: rgba(65, 75, 59, 0.9);
+    color: white;
+    font-family: HUUGFont-klein;
+    font-size: clamp(0.8em, 1.3vw, 1.1em);
+    letter-spacing: 1px;
+}
+
+#btn-hero:hover {
+    background-color: white;
+    color: #414B3B;
+}
+
+.dienst-kaart {
+    background-color: rgba(65, 75, 59, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.dienst-kaart h3 {
+    white-space: normal;
+    margin-bottom: 0.8rem;
+}
+
+.dienst-link {
+    color: white;
+    font-family: HUUGFont-klein;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+}
+
+.dienst-link:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.prijstabel {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 1rem;
+    font-family: HUUGFont-klein;
+    color: white;
+}
+
+.prijstabel th,
+.prijstabel td {
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.prijstabel th {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+
+.prijstabel td:last-child,
+.prijstabel th:last-child {
+    text-align: right;
+}
+
+.prijstabel td:nth-child(2):not(:last-child),
+.prijstabel th:nth-child(2):not(:last-child) {
+    text-align: right;
+}
+
+#voorpagina-menu > .d-md-flex > img {
+    align-self: center;
+    height: auto;
+    object-fit: cover;
+}
+
+.seo-header {
+    background-color: rgba(65, 75, 59, 0.9);
+    padding: 12px 0 8px;
+}
+
+.seo-header img {
+    height: 110px;
+}
+
+.seo-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 clamp(8px, 2vw, 30px);
+    padding: 4px 0;
+}
+
+.seo-nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+.seo-hero {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+    .seo-hero {
+        background-attachment: scroll;
+        padding: 50px 0;
+    }
+}
+
+.seo-hero h1 {
+    font-size: clamp(1.5em, 3.5vw, 2.8em);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.seo-hero p {
+    max-width: 700px;
+    margin: 0 auto 1.8rem;
+    font-size: clamp(1em, 1.6vw, 1.25em);
+}
+
+.seo-inhoud {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.seo-sectie {
+    margin-bottom: 2rem;
+}
+
+.seo-sectie h2 {
+    font-size: clamp(1.2em, 2vw, 1.6em);
+    margin-bottom: 0.8rem;
+}
+
+.seo-sectie p,
+.seo-sectie li {
+    font-family: HUUGFont-klein;
+    font-size: clamp(0.95em, 1.1vw, 1.05em);
+}
+
+.seo-sectie a {
+    color: #414B3B;
+}
+
+.seo-sectie .klein {
+    font-size: 0.85em;
+}
+
+.seo-sectie .btn {
+    color: white;
+}
+
+.prijstabel-licht {
+    color: #212529;
+}
+
+.prijstabel-licht th,
+.prijstabel-licht td {
+    border-bottom: 1px solid rgba(65, 75, 59, 0.4);
+}
+
+@media (max-width: 576px) {
+    #btn-hero {
+        letter-spacing: 0;
+        font-size: 0.8em;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #hero-inhoud {
+        padding: 30px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seo-inhoud {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

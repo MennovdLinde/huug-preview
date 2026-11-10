@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+    <div class="d-grid gap-4">
+
+        <div class="row d-flex justify-content-center" id="hero">
+            <div class="col-12 col-md-10 col-lg-8 text-center text-white" id="hero-inhoud">
+                <h1>Private dining en catering aan huis in Maastricht en Zuid-Limburg</h1>
+                <p>Een compleet culinair diner of event op locatie. Van menu tot afwas volledig verzorgd.</p>
+                <a href="#" class="btn btn-lg" id="btn-hero" onclick="triggerBtn(); return false;">VRAAG EEN PERSOONLIJK VOORSTEL AAN</a>
+            </div>
+        </div>
+
+
+        <div class="row bg-white d-flex justify-content-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide col-12 d-sm-block d-md-none order-last"
+                data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="card" id="card-mob">
+                            <img src="images-small/Home-1.jpg" alt="Privé kok Maastricht">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="card" id="card-mob">
+                            <img src="images-small/Home-2.jpg" alt="Privé chef Maastricht">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="card" id="card-mob">
+                            <img src="images-small/Home-3.jpg" alt="Huug private dining">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-5 py-4" id="card">
+                <div class="card-body">
+                    <h1 class="card-text">Over HUUG
+                    </h1>
+                    <p> Ken je dat, wanneer je een ruimte binnenkomt en je van de heerlijke geuren direct trek begint te
+                        krijgen? Wanneer je nieuwsgierig wordt naar wat er op tafel komt te staan? Dat spreken we van
+                        tevoren natuurlijk af als ik jouw private chef mag zijn, maar dat is het gevoel dat ik voor jou wil creëren.
+                    </p>
+                    <p> Mijn missie is om mensen te ontzorgen en te laten genieten van eerlijk en lekker eten. Ik ben
+                        Hugo van Aspert en met mijn private dining en catering bedrijf hoop ik dit voor jou
+                        te mogen neerzetten. </p>
+                    <p> Heb je een feest, zakelijke gelegenheid, belangrijke gasten over de vloer
+                        of wil je gewoon een avondje ontzorgd worden? Zoek je een privé kok / privé chef?
+                        Dan ben je aan het goede adres. Neem
+                        <a href="#" onclick="triggerBtn()">contact</a> met me op!
+                    </p>
+                </div>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide col-md-5 my-4 py-4 d-none d-sm-none d-md-block"
+                data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="card" id="card">
+                            <img src="images-small/Home-1.jpg" alt="Private kok Maastricht">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="card" id="card">
+                            <img src="images-small/Home-2.jpg" alt="Chef Maastricht">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="card" id="card">
+                            <img src="images-small/Home-3.jpg" alt="Private chef Maastricht">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-4 bg-transparent d-flex justify-content-center" id="diensten">
+            <div class="col-12 col-md-10 px-4 px-md-3">
+                <h2 class="text-light text-center mb-4">WAT HUUG VOOR JE DOET</h2>
+                <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="dienst-kaart h-100 d-flex flex-column text-white">
+                        <h3>Private dining</h3>
+                        <p>Een diner met meerdere gangen bij jou thuis, volledig afgestemd op jouw smaak en voorkeuren.</p>
+                        <a href="#" class="dienst-link mt-auto" onclick="openTab('nav-menu-tab'); return false;">BEKIJK DE MENU'S &rarr;</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="dienst-kaart h-100 d-flex flex-column text-white">
+                        <h3>Catering &amp; bites</h3>
+                        <p>Hapjes en fingerfood voor een feest, een verjaardag of gewoon omdat het gezellig is.</p>
+                        <a href="#" class="dienst-link mt-auto" onclick="openTab('nav-menu-tab'); return false;">BEKIJK DE BITES &rarr;</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="dienst-kaart h-100 d-flex flex-column text-white">
+                        <h3>Events</h3>
+                        <p>Een event op locatie, van je eigen tuin tot een evenementenlocatie, met één aanspreekpunt.</p>
+                        <a href="#" class="dienst-link mt-auto" onclick="openTab('nav-events-tab'); return false;">BEKIJK DE EVENTS &rarr;</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="dienst-kaart h-100 d-flex flex-column text-white">
+                        <h3>Dranken</h3>
+                        <p>Wijn-, bier-, alcoholvrije en cocktailarrangementen, passend bij je menu.</p>
+                        <a href="#" class="dienst-link mt-auto" onclick="openTab('nav-menu-tab'); return false;">BEKIJK DE DRANKEN &rarr;</a>
+                    </div>
+                </div>
+                </div>
+                <p class="text-white text-center mt-4">Iets anders in gedachten? HUUG denkt graag mee over maatwerk. <a href="#" class="dienst-link" onclick="triggerBtn(); return false;">Neem contact op</a>.</p>
+            </div>
+        </div>
+
+        <div class="row py-4 bg-transparent d-flex justify-content-center">
+            <div class="row d-md-none pb-4 d-flex justify-content-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide col-6" data-bs-ride="carousel"
+                    data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="card" id="card-mob">
+                                <img src="images-small/Home2-1.jpg" alt="card3">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="card" id="card-mob">
+                                <img src="images-small/Home2-2.jpg" alt="card5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide col-6" data-bs-ride="carousel"
+                    data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="card" id="card-mob">
+                                <img src="images-small/Home2-3.jpg" alt="card4">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="card" id="card-mob">
+                                <img src="images-small/Home2-4.jpg" alt="card6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 row">
+                <div id="carouselExampleSlidesOnly" class="carousel slide col-md-6 d-none d-md-block"
+                    data-bs-ride="carousel" data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="card" id="card">
+                                <img src="images-small/Home2-1.jpg" alt="card3">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="card" id="card">
+                                <img src="images-small/Home2-2.jpg" alt="card5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide col-md-6 d-none d-md-block"
+                    data-bs-ride="carousel" data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="card" id="card">
+                                <img src="images-small/Home2-3.jpg" alt="card4">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="card" id="card">
+                                <img src="images-small/Home2-4.jpg" alt="card6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-5 bg-transparent" id="card" style="margin-top: -20px;">
+                <div class="card-body text-light">
+                    <h1 class="card-text">Hugo van Aspert</h1>
+                    <p> Vanaf mijn 13e ben ik naar een middelbare school in België gegaan waar ik vanaf het 2e jaar de
+                        kans kreeg een Hotelopleiding te volgen.
+                        Het uitgangspunt van deze opleiding: “we leren het onze leerlingen op het hoogste niveau, dan
+                        beschikken ze over de vaardigheden om in alle denkbare horeca bedrijven te werken” En die passie
+                        heb ik overgenomen.”</p>
+                    <p>
+                        En dat vergeet ik nooit meer, de passie van mijn keukenleerkrachten was ongekend. En die passie
+                        heb ik behouden en voortgezet. Ik ben met HUUG Private Dining gestart omdat ik merkte dat ik
+                        ergens
+                        mijn culinaire creativiteit in kwijt moest.
+                        Inmiddels doe ik dat fulltime en ben blij dat ik nu echt kan doen wat ik zelf leuk vind.</p>
+
+                    <p>Tegenwoordig ben ik actief als privé kok en privé chef in Maastricht en omgeving. Ik heb al veel
+                        ervaring opgedaan als privé kok aan huis. Ook draai ik regelmatig events en catering opdrachten.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg-white d-flex justify-content-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide col-md-5 d-sm-block d-md-none"
+                data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="card" id="card-mob">
+                            <img src="images-small/Home3-1.jpg" alt="card7">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="card" id="card-mob">
+                            <img src="images-small/Home3-2.jpg" alt="card8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-5 py-4" id="card">
+                <div class="card-body">
+                    <h1 class="card-text">Werkproces
+                    </h1>
+                    <p> Ben je van plan om een event te organiseren? Of wellicht een familiediner thuis? Wat voor
+                        aanvraag je ook hebt, het liefst kijk ik met je mee om een menu samen te stellen op basis van je
+                        wensen.
+                    </p>
+                    <p> Na je aanvraag stel ik graag een persoonlijk menuvoorstel op, volledig
+                        passend aan je wensen. Hierin kan qua gerechten uiteraard nog geschoven
+                        worden in overleg.
+                    </p>
+                    <p>Of het nou gaat om een heerlijk uitgebreide avond met meerdere gangen, precies afgesteld op je
+                        wensen, ik bespreek graag met je de mogelijkheden en wensen voor je event. En het spreekt voor zich dat je wordt
+                        ontzorgd, dus Huug Private Dining zorgt ervoor dat je keuken na afloop weer netjes wordt
+                        achtergelaten
+                    </p>
+                </div>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide col-md-5 my-4 py-4 d-none d-sm-none d-md-block"
+                data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="card" id="card">
+                            <img src="images-small/Home3-1.jpg" alt="card7">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="card" id="card">
+                            <img src="images-small/Home3-2.jpg" alt="card8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-col-2 mt-4 my-4">
+            <img src="images-small/Home4-1.jpg" alt="card9" class="col-6 col-md-3 mb-3">
+            <img src="images-small/Home4-2.jpg" alt="card10" class="col-6 col-md-3 mb-3">
+            <img src="images-small/Home4-3.jpg" alt="card11" class="col-6 col-md-3 mb-3">
+            <img src="images-small/Home4-4.jpg" alt="card12" class="col-6 col-md-3 mb-3">
+        </div>
+
+        <h2 class="text-light d-flex justify-content-center">REVIEWS</h2>
+
+        <div class="d-flex row mb-5 d-none d-md-block" id="review">
+            <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">Alles is bespreekbaar, de avond wordt
+                                        verzorgd naar jouw wensen en alles wordt uit handen genomen. Huug nam alles mee
+                                        naar de locatie, zodat je nergens meer naar om hoefde te kijken. Vriendelijk
+                                        personeel en heerlijk eten. Goede porties, we hadden achteraf zeker geen honger
+                                        meer. Heerlijk, enorm bedankt!</p>
+                                    <p class="text-light text-center">- Julia van Berlo</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">Hele fijne samenwerking! Samen met Hugo
+                                        een 3-gangen diner georganiseerd voor 200+ gasten. Aan expertise op dit gebied
+                                        absoluut geen gebrek!</p>
+                                    <p class="text-light text-center">- Olaf</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">HUUG Private Dining heeft ons een
+                                        onvergetelijke dag meegegeven! Met Studentenvereniging Amphitryon hebben wij een
+                                        klassieke Auto Rally georganiseerd en HUUG Private Dining kon hierin niet
+                                        ontbreken. Op het moment dat een belangrijke horecagelegenheid ons cancelde,
+                                        sprong Hugo direct bij. Hij wist in 1 dag te regelen, dat er een borrel werd
+                                        verzorgd met mocktails en culinaire hapjes in een fruitgaard in Zuid-Limburg. De
+                                        dag sloten we af met een heerlijke verse rendang. Alles was weer tot in de
+                                        puntjes geregeld en hij vormt een mooi team samen met Annemarie. Beide super
+                                        attent en gaven ons echt een ervaring die we niet meer vergeten. Wij gaan nog
+                                        lang denken aan HUUG Private Dining!! Dank!!!</p>
+                                    <p class="text-light text-center">- Benthe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">HUUG Private Dining heeft bij ons een
+                                        borrel met 6 bites voor 60 personen zeer goed verzorgd. Exclusieve hapjes
+                                        waarvan een gast opmerkte: ‘ ik heb vorige week in een sterrenrestaurant gegeten
+                                        maar deze kleine gerechtjes zijn beter en lekkerder’. Veel enthousiaste reacties
+                                        van overige gasten. In het voortraject wordt door Hugo snel en accuraat
+                                        geantwoord op vragen. Na afloop wordt alles tip-top achtergelaten.</p>
+                                    <p class="text-light text-center">- Jaap</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">Wil je onbezorgd een feestje vieren dan
+                                        bij je bij HUUG aan het goede adres.
+                                        Alles is bespreekbaar, veel is mogelijk. Smaakvol met topproducten en veel lof
+                                        van onze gasten. Een aanrader !</p>
+                                    <p class="text-light text-center">- Mirjam</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">HUUG heeft alles tot in de puntjes
+                                        verzorgd!! Onwijs goed ontbijt! Leuke bites waar iedereen enthousiast van werd!!
+                                        Dikke aanrader en voor herhaling vatbaar</p>
+                                    <p class="text-light text-center">- Maaike</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">Super lekkere gerechten geserveerd
+                                        tijdens ons evenement! Daarnaast ook nog eens een super fijne service en
+                                        samenwerking! Kwalitatief enorm goed!!</p>
+                                    <p class="text-light text-center">- Jasmijn</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2">Fantastisch 5-gangen diner via Huug
+                                        Private Dining!! Je
+                                        hoeft letterlijk niets voor te bereiden of af te ruimen, dit wordt allemaal
+                                        verzorgd. We eten
+                                        graag en hebben al in veel (sterren) restaurants gegeten en deze avond had veel
+                                        gelijkenissen!
+                                        Goede communicatie op voorhand en afspraken werden netjes nagekomen. Avondje uit
+                                        thuis :)</p>
+                                    <p class="text-light text-center">- Nienke</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mx-4" id="card-review">
+                                    <p class="text-light text-center mt-2 px-2"> Wat een topper die Hugo! Geweldige
+                                        catering voor 300
+                                        personen op InterClassics Maastricht op het luxury paviljoen! Well done team
+                                        HUUG! Super
+                                        vriendelijk een heel vakkundig.</p>
+                                    <p class="text-light text-center">- Danielle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mb-4 d-sm-block d-md-none" id="review">
+            <div id="singleReviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-4" id="card-review">
+                            <p class="text-light text-center mt-2 px-2">Alles is bespreekbaar, de avond wordt verzorgd
+                                naar jouw wensen en alles wordt uit handen genomen. Huug nam alles mee naar de locatie,
+                                zodat je nergens meer naar om hoefde te kijken. Vriendelijk personeel en heerlijk eten.
+                                Goede porties, we hadden achteraf zeker geen honger meer. Heerlijk, enorm bedankt!</p>
+                            <p class="text-light text-center">- Julia van Berlo</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2">Hele fijne samenwerking! Samen met Hugo een
+                                    3-gangen diner georganiseerd voor 200+ gasten. Aan expertise op dit gebied
+                                    absoluut geen gebrek!</p>
+                                <p class="text-light text-center">- Olaf</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2">HUUG Private Dining heeft ons een
+                                    onvergetelijke dag meegegeven! Met Studentenvereniging Amphitryon hebben wij een
+                                    klassieke Auto Rally georganiseerd en HUUG Private Dining kon hierin niet ontbreken.
+                                    Op het moment dat een belangrijke horecagelegenheid ons cancelde, sprong Hugo direct
+                                    bij. Hij wist in 1 dag te regelen, dat er een borrel werd verzorgd met mocktails en
+                                    culinaire hapjes in een fruitgaard in Zuid-Limburg. De dag sloten we af met een
+                                    heerlijke verse rendang. Alles was weer tot in de puntjes geregeld en hij vormt een
+                                    mooi team samen met Annemarie. Beide super attent en gaven ons echt een ervaring die
+                                    we niet meer vergeten. Wij gaan nog lang denken aan HUUG Private Dining!! Dank!!!
+                                </p>
+                                <p class="text-light text-center">- Benthe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2">HUUG Private Dining heeft bij ons een borrel
+                                    met 6 bites voor 60 personen zeer goed verzorgd. Exclusieve hapjes waarvan een gast
+                                    opmerkte: ‘ ik heb vorige week in een sterrenrestaurant gegeten maar deze kleine
+                                    gerechtjes zijn beter en lekkerder’. Veel enthousiaste reacties van overige gasten.
+                                    In het voortraject wordt door Hugo snel en accuraat geantwoord op vragen. Na afloop
+                                    wordt alles tip-top achtergelaten.</p>
+                                <p class="text-light text-center">- Jaap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2">Wil je onbezorgd een feestje vieren dan bij
+                                    je bij HUUG aan het goede adres.
+                                    Alles is bespreekbaar, veel is mogelijk. Smaakvol met topproducten en veel lof van
+                                    onze gasten. Een aanrader !</p>
+                                <p class="text-light text-center">- Mirjam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2">HUUG heeft alles tot in de puntjes
+                                    verzorgd!! Onwijs goed ontbijt! Leuke bites waar iedereen enthousiast van werd!!
+                                    Dikke aanrader en voor herhaling vatbaar</p>
+                                <p class="text-light text-center">- Maaike</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2">Super lekkere gerechten geserveerd tijdens
+                                    ons evenement! Daarnaast ook nog eens een super fijne service en samenwerking!
+                                    Kwalitatief enorm goed!!</p>
+                                <p class="text-light text-center">- Jasmijn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2">Fantastisch 5-gangen diner via Huug Private
+                                    Dining!! Je
+                                    hoeft letterlijk niets voor te bereiden of af te ruimen, dit wordt allemaal
+                                    verzorgd. We eten
+                                    graag en hebben al in veel (sterren) restaurants gegeten en deze avond had veel
+                                    gelijkenissen!
+                                    Goede communicatie op voorhand en afspraken werden netjes nagekomen. Avondje uit
+                                    thuis :)</p>
+                                <p class="text-light text-center">- Nienke</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mx-4" id="card-review">
+                                <p class="text-light text-center mt-2 px-2"> Wat een topper die Hugo! Geweldige catering
+                                    voor 300
+                                    personen op InterClassics Maastricht op het luxury paviljoen! Well done team HUUG!
+                                    Super
+                                    vriendelijk een heel vakkundig.</p>
+                                <p class="text-light text-center">- Danielle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#singleReviewCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#singleReviewCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
