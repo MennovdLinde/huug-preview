@@ -42,7 +42,13 @@ document.getElementById("logo").addEventListener("mouseover", function () {
 
 fetch("home.html")
   .then((response) => response.text())
-  .then((html) => (document.getElementById("nav-home").innerHTML = html));
+  .then((html) => {
+    document.getElementById("nav-home").innerHTML = html;
+    // Carousels starten pas bij het load-event; home.html komt daarna via fetch binnen
+    document
+      .querySelectorAll("#nav-home .carousel")
+      .forEach((c) => bootstrap.Carousel.getOrCreateInstance(c).cycle());
+  });
 
 fetch("events.html")
   .then((response) => response.text())
