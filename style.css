@@ -484,3 +484,17 @@ footer {
 .menu-slider {
     align-self: center;
 }
+
+.btn-google {
+    border: 2px solid white;
+    background-color: rgba(65, 75, 59, 0.9);
+    color: white;
+    font-family: HUUGFont-klein;
+    font-size: clamp(0.75em, 1.2vw, 1em);
+    letter-spacing: 1px;
+}
+
+.btn-google:hover {
+    background-color: white;
+    color: #414B3B;
+}
