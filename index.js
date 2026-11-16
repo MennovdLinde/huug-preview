@@ -117,3 +117,10 @@ var tabVoorHash = {
 if (tabVoorHash[window.location.hash]) {
   document.getElementById(tabVoorHash[window.location.hash]).click();
 }
+
+// Bij wisselen van hoofdtabblad de pagina weer bovenaan laten beginnen
+document.querySelectorAll("#nav-tab button").forEach((knop) => {
+  knop.addEventListener("shown.bs.tab", () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  });
+});
