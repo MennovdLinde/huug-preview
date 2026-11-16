@@ -128,8 +128,13 @@ fetch("contact.html")
   });
 
 
-function openTab(id) {
+// Opent een hoofdtabblad en, als dat is opgegeven, ook een sub-tabblad daarin (bijv. Bites in Menu's)
+function openTab(id, subId) {
   document.getElementById(id).click();
+  if (subId) {
+    const sub = document.getElementById(subId);
+    if (sub) sub.click();
+  }
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
