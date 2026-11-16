@@ -1,3 +1,10 @@
+// Carousels starten pas bij het load-event; de pagina's komen daarna via fetch binnen
+function startCarousels(selector) {
+  document
+    .querySelectorAll(selector + " .carousel")
+    .forEach((c) => bootstrap.Carousel.getOrCreateInstance(c).cycle());
+}
+
 function navUp() {
   document.getElementById("navbar").classList.add("scrolled-down");
   document.getElementById("navbar").classList.remove("scrolled-up");
@@ -44,16 +51,14 @@ fetch("home.html")
   .then((response) => response.text())
   .then((html) => {
     document.getElementById("nav-home").innerHTML = html;
-    // Carousels starten pas bij het load-event; home.html komt daarna via fetch binnen
-    document
-      .querySelectorAll("#nav-home .carousel")
-      .forEach((c) => bootstrap.Carousel.getOrCreateInstance(c).cycle());
+    startCarousels("#nav-home");
   });
 
 fetch("events.html")
   .then((response) => response.text())
   .then((html) => {
     document.getElementById("nav-events").innerHTML = html;
+    startCarousels("#nav-events");
   });
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -84,6 +89,7 @@ fetch("events.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("nav-menu").innerHTML = html;
+            startCarousels("#nav-menu");
             addMenuToggleEvents(); // Apply event listeners after menu loads
         });
 });

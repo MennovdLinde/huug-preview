@@ -247,7 +247,7 @@ footer {
 }
 
 #hero {
-    background-image: linear-gradient(rgba(20, 25, 18, 0.55), rgba(20, 25, 18, 0.55)), url("images-small/Home-1.jpg");
+    background-image: linear-gradient(rgba(20, 25, 18, 0.55), rgba(20, 25, 18, 0.55)), url("images-small/foto-1003.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -457,5 +457,21 @@ footer {
     .seo-inhoud {
         padding-top: 0;
         padding-bottom: 0;
+    }
+}
+
+.menu-slider {
+    width: 100%;
+}
+
+.menu-slider img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .menu-slider img {
+        height: 38vh;
     }
 }
