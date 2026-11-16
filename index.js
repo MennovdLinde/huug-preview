@@ -1,3 +1,27 @@
+// Alle reviews in een carousel even hoog maken, zodat de pagina eronder niet verspringt
+// en lange reviews nooit over de knoppen eronder lopen
+function gelijkeReviewHoogte() {
+  document
+    .querySelectorAll("#reviewCarousel, #singleReviewCarousel")
+    .forEach((carousel) => {
+      const inner = carousel.querySelector(".carousel-inner");
+      inner.style.minHeight = "";
+      const breedte = inner.getBoundingClientRect().width;
+      let max = 0;
+      carousel.querySelectorAll(".carousel-item").forEach((item) => {
+        const oud = item.style.cssText;
+        item.style.cssText =
+          "display:block;visibility:hidden;position:absolute;width:" + breedte + "px";
+        max = Math.max(max, item.offsetHeight);
+        item.style.cssText = oud;
+      });
+      if (breedte > 0 && max > 0) inner.style.minHeight = max + "px";
+    });
+}
+window.addEventListener("resize", gelijkeReviewHoogte);
+window.addEventListener("load", gelijkeReviewHoogte);
+if (document.fonts) document.fonts.ready.then(gelijkeReviewHoogte);
+
 // Carousels starten pas bij het load-event; de pagina's komen daarna via fetch binnen
 function startCarousels(selector) {
   document
@@ -52,6 +76,7 @@ fetch("home.html")
   .then((html) => {
     document.getElementById("nav-home").innerHTML = html;
     startCarousels("#nav-home");
+    gelijkeReviewHoogte();
   });
 
 fetch("events.html")
