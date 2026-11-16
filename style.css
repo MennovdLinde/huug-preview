@@ -8,13 +8,25 @@
     src: url(font-klein/LexendDeca-Regular.woff);
 }
 
+html {
+    background-color: #000;
+}
+
 body {
     overflow-y: scroll;
-    overflow-x: none;
     overflow-x: hidden;
-    background-image: url("wetransfer/HUUG website bg.png");
-    background-attachment: fixed;
-    background-size: cover;
+}
+
+/* Achtergrond op een vaste laag: schaalt met het scherm, niet met de lengte van de pagina */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000 url("wetransfer/HUUG website bg.png") center / cover no-repeat;
 }
 
 ::-webkit-scrollbar {
