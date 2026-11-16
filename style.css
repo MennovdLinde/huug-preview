@@ -475,3 +475,12 @@ footer {
         height: 38vh;
     }
 }
+
+/* Groene prijsrijen: tekst en foto-slider verticaal gecentreerd */
+#voorpagina-menu[style*="65, 75, 59"] {
+    align-items: center;
+}
+
+.menu-slider {
+    align-self: center;
+}
